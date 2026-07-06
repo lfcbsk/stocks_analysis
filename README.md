@@ -397,7 +397,7 @@ images/stock_screener.png
 images/risk_return_analysis.png
 ```
 
-![Risk and Return Analysis](preview_of_PowerBI/Screenshot%202026-07-06%20195840.png)
+![Risk and Return Analysis](preview_of_PowerBI/Screenshot%202026-07-06%20195848.png)
 
 ### Sector and Portfolio Insights
 
