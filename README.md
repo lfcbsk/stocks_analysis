@@ -373,7 +373,7 @@ Simple portfolio strategies show different trade-offs. A Top Sharpe portfolio ma
 
 ## 9. Dashboard Preview
 
-Add dashboard screenshots to the `images/` folder and update the paths below.
+Add dashboard screenshots to the `preview_of_PowerBI/` folder and update the paths below.
 
 ### Market Overview
 
@@ -381,7 +381,7 @@ Add dashboard screenshots to the `images/` folder and update the paths below.
 images/market_overview.png
 ```
 
-![Market Overview](images/market_overview.png)
+![Market Overview](preview_of_PowerBI/Screenshot%202026-07-06%20195822.png)
 
 ### Stock Screener
 
@@ -389,7 +389,7 @@ images/market_overview.png
 images/stock_screener.png
 ```
 
-![Stock Screener](images/stock_screener.png)
+![Stock Screener](preview_of_PowerBI/Screenshot%202026-07-06%20195840.png)
 
 ### Risk and Return Analysis
 
@@ -397,7 +397,7 @@ images/stock_screener.png
 images/risk_return_analysis.png
 ```
 
-![Risk and Return Analysis](images/risk_return_analysis.png)
+![Risk and Return Analysis](preview_of_PowerBI/Screenshot%202026-07-06%20195840.png)
 
 ### Sector and Portfolio Insights
 
@@ -405,7 +405,7 @@ images/risk_return_analysis.png
 images/sector_portfolio_insights.png
 ```
 
-![Sector and Portfolio Insights](images/sector_portfolio_insights.png)
+![Sector and Portfolio Insights](preview_of_PowerBI/Screenshot%202026-07-06%20195855.png)
 
 ---
 
