@@ -50,7 +50,7 @@ The analysis aims to support better investment decision-making by combining fina
 
 ## 3. Dataset
 
-The project uses historical daily OHLCV stock data for Vietnamese large-cap stocks and VNINDEX as the market benchmark.
+The project uses historical daily OHLCV stock data for Vietnamese large-cap stocks and VNINDEX as the market benchmark from Kaggle (![Link](https://www.kaggle.com/datasets/bolongv/stock-prices-vn30-index-vietnam-82025?utm_source=chatgpt.com).
 
 ### Raw Data
 
@@ -468,12 +468,6 @@ Simple daily return:
 R_t = P_t / P_{t-1} - 1
 ```
 
-Log return:
-
-```text
-r_t = ln(P_t / P_{t-1})
-```
-
 Cumulative return:
 
 ```text
@@ -528,106 +522,7 @@ VNINDEX is used as the market benchmark.
 
 ---
 
-## 12. How to Run the Project
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/lfcbsk/stocks_analysis.git
-cd stocks_analysis
-```
-
-### 2. Create a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-Activate the environment:
-
-```bash
-# Windows
-.venv\Scripts\activate
-```
-
-```bash
-# macOS/Linux
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install pandas numpy matplotlib seaborn plotly scipy jupyter
-```
-
-If using VNINDEX data collection from `vnstock`, install:
-
-```bash
-pip install vnstock
-```
-
-### 4. Run data processing
-
-Open and run:
-
-```text
-process_data.ipynb
-```
-
-This notebook creates:
-
-```text
-processed_data/clean_full.csv
-```
-
-### 5. Run EDA and financial analysis
-
-Open and run:
-
-```text
-EDA.ipynb
-```
-
-This notebook creates Power BI-ready files under:
-
-```text
-processed_data/powerbi/
-```
-
-### 6. Open Power BI dashboard
-
-Open:
-
-```text
-visualize.pbix
-```
-
-If Power BI asks for data source paths, reconnect the CSV files to:
-
-```text
-processed_data/powerbi/
-```
-
----
-
-## 13. Power BI Data Files
-
-| File | Description |
-|---|---|
-| fact_prices.csv | Clean price and volume data |
-| fact_daily_returns.csv | Daily stock returns in long format |
-| fact_cumulative_returns.csv | Cumulative returns by ticker |
-| fact_drawdown.csv | Drawdown series by ticker |
-| risk_metrics.csv | Return and risk metrics by ticker |
-| beta_metrics.csv | Beta and market sensitivity metrics |
-| sector_metrics.csv | Sector-level performance and risk metrics |
-| portfolio_cumulative_returns.csv | Portfolio cumulative return time series |
-| portfolio_metrics.csv | Portfolio-level return and risk metrics |
-
----
-
-## 14. Dashboard Design Logic
+## 12. Dashboard Design Logic
 
 The dashboard follows an investment analysis flow:
 
@@ -645,7 +540,7 @@ This structure allows users to move from general market understanding to specifi
 
 ---
 
-## 15. Limitations
+## 13. Limitations
 
 This project is for educational and analytical purposes only. It is not financial advice.
 
@@ -661,40 +556,7 @@ Main limitations:
 
 ---
 
-## 16. Future Improvements
-
-Possible extensions:
-
-- Add financial statement data.
-- Add valuation metrics such as P/E, P/B, ROE, and EPS growth.
-- Build a factor-based stock screener.
-- Add rolling beta and rolling volatility.
-- Add transaction costs to portfolio simulation.
-- Add rebalancing logic for portfolio backtesting.
-- Add macroeconomic variables such as interest rates, inflation, exchange rate, and GDP growth.
-- Deploy the dashboard to Power BI Service.
-- Add automated data update pipeline.
-
----
-
-## 17. Skills Demonstrated
-
-This project demonstrates:
-
-- Data collection and consolidation
-- Data cleaning and validation
-- Exploratory data analysis
-- Financial market analytics
-- Risk-return analysis
-- Portfolio simulation
-- Power BI dashboard design
-- DAX measure creation
-- Business insight communication
-- Investment analytics storytelling
-
----
-
-## 18. Project Summary
+## 14. Project Summary
 
 This project provides a complete investment analytics workflow for Vietnam large-cap stocks. It combines Python-based statistical and financial analysis with an interactive Power BI dashboard.
 
